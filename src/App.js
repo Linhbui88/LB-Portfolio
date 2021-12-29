@@ -1,10 +1,11 @@
 import React from 'react'
 import { BrowserRouter as Router, Route, Routes,} from "react-router-dom";
-import About from './components/About'
+import About from './pages/About'
 import Header from './components/Header';
-import Portfolio from './components/Portfolio';
-import Contact from './components/Contact';
-import Resume from './components/Resume'
+import Portfolio from './pages/Portfolio';
+import Contact from './pages/Contact';
+import Resume from './pages/Resume';
+import Footer from './components/Footer'
 
 
 
@@ -23,6 +24,7 @@ function App() {
           <Route  path ="/contact" element ={<Contact />} />
           <Route  path ="/resume" element ={<Resume />} />
         </Routes>
+        <Footer />
       </Router>
 
     </div>
