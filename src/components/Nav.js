@@ -1,16 +1,16 @@
 import {Link} from 'react-router-dom'
+import {Row,Col} from "react-bootstrap"
 
 const Nav = () => {
   return (
-   <nav>
-     <ol>
-       <Link className="text-decoration-none mx-3" to="/">About</Link>
-       <Link className="text-decoration-none mx-3" to="/portfolio">Portfolio</Link>
-       <Link className="text-decoration-none mx-3" to="/contact">Contact</Link>
-       <Link className="text-decoration-none mx-3" to="/resume">Resume</Link>
+   <Row className="fs-5">
+   
+       <Col><Link className="text-decoration-none mx-3 text-success" to="/">About</Link></Col>
+       <Col><Link className="text-decoration-none mx-3 text-success" to="/portfolio">Portfolio</Link></Col>
+       <Col><Link className="text-decoration-none mx-3 text-success" to="/resume">Resume</Link></Col>
        
-     </ol>
-   </nav>
+    
+   </Row>
   )
 }
 

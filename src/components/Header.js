@@ -1,11 +1,12 @@
 import Nav from './Nav'
+import {Stack} from "react-bootstrap"
 
 const Header = () => {
   return (
-    <div className="d-flex flex-row justify-content-between">
-      <h1>LB</h1>
-      <Nav />
-    </div>
+    <Stack direction="horizontal" gap={3} className="text-success">
+  <h1 className="fs-1">LB</h1>
+  <div className="ms-auto"><Nav /></div>
+</Stack>
   )
 }
 
