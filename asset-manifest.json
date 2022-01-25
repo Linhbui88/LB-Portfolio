@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/static/css/main.073c9b0a.css",
+    "main.js": "/static/js/main.937e2509.js",
+    "static/js/787.cf250828.chunk.js": "/static/js/787.cf250828.chunk.js",
+    "static/media/profile.jpg": "/static/media/profile.9bb6907107ecfa400739.jpg",
+    "static/media/netflixAndGrill.PNG": "/static/media/netflixAndGrill.20851e2a3d354fe1678c.PNG",
+    "static/media/book-search-engine.JPG": "/static/media/book-search-engine.9073d72174648d8ec82c.JPG",
+    "static/media/your-local-farmer.JPG": "/static/media/your-local-farmer.78600479e07b5f723389.JPG",
+    "static/media/soulMatch.PNG": "/static/media/soulMatch.e2d9713d6899f3ff21ae.PNG",
+    "static/media/tasksTracker.PNG": "/static/media/tasksTracker.9d82a2e2efcbd818370b.PNG",
+    "static/media/techBlog.PNG": "/static/media/techBlog.e97f9d39a8d07e60f8a7.PNG",
+    "index.html": "/index.html",
+    "main.073c9b0a.css.map": "/static/css/main.073c9b0a.css.map",
+    "main.937e2509.js.map": "/static/js/main.937e2509.js.map",
+    "787.cf250828.chunk.js.map": "/static/js/787.cf250828.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.073c9b0a.css",
+    "static/js/main.937e2509.js"
+  ]
+}
