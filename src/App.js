@@ -5,7 +5,7 @@ import Header from './components/Header';
 import Portfolio from './pages/Portfolio';
 import Project from './components/Project';
 
-import Resume from './pages/Resume';
+
 import Footer from './components/Footer';
 import {projects} from './projectsData';
 
@@ -23,11 +23,11 @@ function App() {
         <Routes>
           <Route exact path ="/" element ={<About />} />
           <Route path ="/portfolio" element ={<Portfolio projects={projects}/>} />
-          <Route  path ="/resume" element ={<Resume />} />
+        
         </Routes>
       
        
-        <Footer />
+     
       </Router>
 
     </div>

@@ -7,7 +7,7 @@ const Nav = () => {
    
        <Col><Link className="text-decoration-none mx-3 text-success" to="/">About</Link></Col>
        <Col><Link className="text-decoration-none mx-3 text-success" to="/portfolio">Portfolio</Link></Col>
-       <Col><Link className="text-decoration-none mx-3 text-success" to="/resume">Resume</Link></Col>
+       <Col><a  className="text-decoration-none mx-3 text-success" href={process.env.PUBLIC_URL + '/LinhBui-resume.pdf'}>Resume</a></Col>
        
     
    </Row>
