@@ -1,35 +1,37 @@
-import { Card, Row, Col, Stack } from "react-bootstrap";
+import "./Project.css";
 
-const Project = ({ title, img, code, deployedLink, description, technologies }) => {
+const Project = ({
+  title,
+  img,
+  code,
+  deployedLink,
+  description,
+  technologies,
+}) => {
   return (
-    <>
-    <div className="bg-white p-5 mb-5 border border-success" style={{borderRadius:"15px"}}>
-    <Row className="mb-2">
-        <Col>
-        <img src={img} style={{height:"250px",width:"350px"}}></img>
-        </Col>
-        <Col>
-        <h3 className="fw-bold">{title}</h3>
-        <h5>Technologies Used: <span className="text-success"> {technologies}</span></h5>
-        {description}
-        </Col>
-        
-      </Row>
-      <Row classNam="justify-content-md-center"> 
-        <Col className="d-flex justify-content-end">
-          <a href={deployedLink} target="_blank"className="text-success fw-bold fs-4" >Live</a>
-     
-        </Col>
-        <Col>
-        <a href={code} target="_blank"className="text-success fw-bold fs-4" >Repo</a>
-      
-        </Col>
-      </Row>
+   
+      <div className="project-card">
+        <div className="project-content">
+          <img src={img}></img>
 
-    </div>
-     
-    </>
-  );
+          <h5>{title}</h5>
+          <small>Technologies Used:</small>
+          <span> {technologies}</span>
+         
+
+          <p>{description}</p>
+        </div>
+        <div className="live-repo">
+          <a href={deployedLink} target="_blank" rel="noopener noreferrer">
+            Live
+          </a>
+
+          <a href={code} target="_blank" rel="noopener noreferrer">
+            Repo
+          </a>
+        </div>
+      </div>
+  )
 };
 
 export default Project;

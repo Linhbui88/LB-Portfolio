@@ -7,14 +7,14 @@ import yourLocalFarmer from "./photo/your-local-farmer.JPG"
 
 
  export const projects =[
-  {
-    title: "Tasks Tracker",
-    technologies: "React",
-    description:"Tasks Tracker web application using React to help keep track of daily tracks.",
-    img :tasksTracker,
-    code:"https://github.com/Linhbui88/react-tasks-tracker",
-    deployedLink:"https://linhs-task-tracker.herokuapp.com/"
-  },
+  // {
+  //   title: "Tasks Tracker",
+  //   technologies: "React",
+  //   description:"Tasks Tracker web application using React to help keep track of daily tracks.",
+  //   img :tasksTracker,
+  //   code:"https://github.com/Linhbui88/react-tasks-tracker",
+  //   deployedLink:"https://linhs-task-tracker.herokuapp.com/"
+  // },
   {
     title: "soulMatch",
     technologies: "Node/Express.js, MySQL + Sequelize, Express-Handlebars",
@@ -26,7 +26,7 @@ import yourLocalFarmer from "./photo/your-local-farmer.JPG"
   {
     title: "Netflix and Grill",
     technologies: "HTML, CSS, JavaSrcipt",
-    description:"An app to help pair an accommodating dish for dinner with a movie based on a few answers, HTML and Founddation CSS in the front end and Vanilla JavaScript on the back end.",
+    description:"An app to help pair an accommodating dish for dinner with a movie based on a few answers.",
     img :netflixAndGrill,
     code:"https://github.com/Linhbui88/Netflix-and-Grill",
     deployedLink:"https://linhbui88.github.io/Netflix-and-Grill/"
@@ -39,18 +39,18 @@ import yourLocalFarmer from "./photo/your-local-farmer.JPG"
     code:"https://github.com/Linhbui88/Book-Search-Engine",
     deployedLink:"https://linh-book-search-engine.herokuapp.com/"
   },
-  {
-    title: "Tech Blog",
-    technologies: "Node/Express.js, MySQL + Sequelize, Handlebars",
-    description:"A Tech Blog with CRUD method using MySQl + Sequelize to store data, Handlebras to render HTML.",
-    img :techBlog,
-    code:"https://github.com/Linhbui88/Tech-Blog",
-    deployedLink:"https://nameless-harbor-72570.herokuapp.com/"
-  },
+  // {
+  //   title: "Tech Blog",
+  //   technologies: "Node/Express.js, MySQL + Sequelize, Handlebars",
+  //   description:"A Tech Blog with CRUD method using MySQl + Sequelize to store data, Handlebras to render HTML.",
+  //   img :techBlog,
+  //   code:"https://github.com/Linhbui88/Tech-Blog",
+  //   deployedLink:"https://nameless-harbor-72570.herokuapp.com/"
+  // },
   {
     title: "Your Local Farmer",
     technologies: "React, Chakra UI, GraphQL, MongoDB + Mongoose",
-    description:"Full Stack MERN Application using React and Chakra UI in the client side when using MongoDb + Mongoose to store data, and GraphQL to query and display application's functionalities. The purposes of this app are to help buying fresh from the farm, avoid food waste and support local business.",
+    description:"Full Stack MERN Application ,the purposes of this app are to help buying fresh from the farm, avoid food waste and support local business.",
     img :yourLocalFarmer,
     code:"https://github.com/Linhbui88/your-local-farmers",
     deployedLink:"https://your-local-farmers.herokuapp.com/"

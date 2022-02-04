@@ -1,0 +1,41 @@
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+ 
+}
+
+
+.contact-email {
+  background-color: var(--darkGreen);
+  padding: 5px 15px;
+  border-radius: 15px;
+  margin-bottom: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 250px;
+}
+.contact-email a {
+  color: black;
+  text-decoration: none;
+  font-size: 20px;
+}
+.contact-tel {
+  background-color: var(--darkGreen);
+  padding: 5px 10px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 250px;
+}
+
+.contact-tel a {
+  color: black;
+  text-decoration: none;
+}
+.contact-location {
+  color:black;
+  margin: 10px;
+}

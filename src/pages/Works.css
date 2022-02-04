@@ -1,0 +1,13 @@
+.work-content {
+  display: flex;
+  flex-direction: column;
+  margin: 20px 0 0 170px;
+  animation: zoomIn;
+  animation-duration: 1s;
+  
+}
+.work-project-card {
+  margin: 5px;
+  display: flex;
+  flex-wrap: wrap;
+}

@@ -1,36 +1,50 @@
-import React from 'react'
-import { BrowserRouter as Router, Route, Routes,} from "react-router-dom";
-import About from './pages/About'
-import Header from './components/Header';
-import Portfolio from './pages/Portfolio';
-import Project from './components/Project';
+import React from "react";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
-
-import Footer from './components/Footer';
-import {projects} from './projectsData';
-
-
-
-import './App.css';
+import Home from "./pages/Home";
+import About from "./pages/About";
+import Works from "./pages/Works";
+import SideNavBar from "./components/SideNavBar";
+import { projects } from "./projectsData";
+import Skills from "./pages/Skills";
+import Contact from "./pages/Contact";
+import { useState, useEffect } from "react";
+import "./App.css";
 
 function App() {
-  return (
-   
-    <div className="bg-black p-5">
-    
-      <Router>
-        <Header />
-        <Routes>
-          <Route exact path ="/" element ={<About />} />
-          <Route path ="/portfolio" element ={<Portfolio projects={projects}/>} />
-        
-        </Routes>
-      
-       
-     
-      </Router>
+  const [openSB, setOpenSB] = useState(false);
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+  useEffect(() => {
+    window.addEventListener("resize", updateWindowWidth);
+  }, []);
+  const updateWindowWidth = () => {
+    setWindowWidth(window.innerWidth);
+  };
 
-    </div>
+  return (
+    <>
+      <Router>
+        <div className="d-flex">
+          <SideNavBar
+            openSB={openSB}
+            setOpenSB={setOpenSB}
+            windowWidth={windowWidth}
+            setWindowWidth={setWindowWidth}
+          />
+
+          <Routes>
+            <Route exact path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/skills" element={<Skills />} />
+            <Route
+              path="/works"
+              element={<Works projects={projects} />}
+            />
+            <Route path="/contact" element={<Contact />} />
+          </Routes>
+        </div>
+      </Router>
+    </>
   );
 }
 
