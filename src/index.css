@@ -137,6 +137,9 @@
   .work-project-card{
     justify-content: flex-start;
   }
+  .section-head {
+    align-self: flex-start;
+  }
 }
 
 *,
