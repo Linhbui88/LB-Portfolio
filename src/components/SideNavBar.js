@@ -11,7 +11,7 @@ import "./SideNavBar.css";
 
 const SideNavbar = ({ openSB, setOpenSB, windowWidth, setWindowWidth }) => {
   const crossClassSideMenu = () => {
-    return `${windowWidth > 990 || openSB ? "sideMenuShow" : "sideMenuHide"}`;
+    return `${windowWidth > 992 || openSB ? "sideMenuShow" : "sideMenuHide"}`;
   };
   const crossClass = () => {
     return ` sidebar ${openSB ? "open" : ""} `;
@@ -32,7 +32,7 @@ const SideNavbar = ({ openSB, setOpenSB, windowWidth, setWindowWidth }) => {
   const footerYear = new Date().getFullYear();
   return (
     <div>
-      {windowWidth <= 990 ? (
+      {windowWidth <= 992 ? (
         <BsMenuButtonWide className="sidebar-button" onClick={handleMenuBtn} />
       ) : (
         ""

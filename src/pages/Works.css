@@ -1,5 +1,7 @@
 .work-content {
   display: flex;
+  justify-content: center;
+  align-items: flex-start;
   flex-direction: column;
   margin: 20px 0 0 170px;
   animation: zoomIn;
@@ -7,7 +9,7 @@
   
 }
 .work-project-card {
-  margin: 5px;
+ 
   display: flex;
   flex-wrap: wrap;
 }

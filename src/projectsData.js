@@ -7,14 +7,14 @@ import yourLocalFarmer from "./photo/your-local-farmer.JPG"
 
 
  export const projects =[
-  // {
-  //   title: "Tasks Tracker",
-  //   technologies: "React",
-  //   description:"Tasks Tracker web application using React to help keep track of daily tracks.",
-  //   img :tasksTracker,
-  //   code:"https://github.com/Linhbui88/react-tasks-tracker",
-  //   deployedLink:"https://linhs-task-tracker.herokuapp.com/"
-  // },
+  {
+    title: "Tasks Tracker",
+    technologies: "React",
+    description:"Tasks Tracker web application using React to help keep track of daily tracks.",
+    img :tasksTracker,
+    code:"https://github.com/Linhbui88/react-tasks-tracker",
+    deployedLink:"https://linhs-task-tracker.herokuapp.com/"
+   },
   {
     title: "soulMatch",
     technologies: "Node/Express.js, MySQL + Sequelize, Express-Handlebars",
@@ -39,14 +39,14 @@ import yourLocalFarmer from "./photo/your-local-farmer.JPG"
     code:"https://github.com/Linhbui88/Book-Search-Engine",
     deployedLink:"https://linh-book-search-engine.herokuapp.com/"
   },
-  // {
-  //   title: "Tech Blog",
-  //   technologies: "Node/Express.js, MySQL + Sequelize, Handlebars",
-  //   description:"A Tech Blog with CRUD method using MySQl + Sequelize to store data, Handlebras to render HTML.",
-  //   img :techBlog,
-  //   code:"https://github.com/Linhbui88/Tech-Blog",
-  //   deployedLink:"https://nameless-harbor-72570.herokuapp.com/"
-  // },
+   {
+    title: "Tech Blog",
+    technologies: "Node/Express.js, MySQL + Sequelize, Handlebars",
+    description:"A Tech Blog with CRUD method using MySQl + Sequelize to store data, Handlebras to render HTML.",
+    img :techBlog,
+    code:"https://github.com/Linhbui88/Tech-Blog",
+    deployedLink:"https://nameless-harbor-72570.herokuapp.com/"
+  },
   {
     title: "Your Local Farmer",
     technologies: "React, Chakra UI, GraphQL, MongoDB + Mongoose",

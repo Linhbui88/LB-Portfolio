@@ -11,6 +11,7 @@ const Contact = () => {
         <h2>CONTACT</h2>
       </div>
       <div className="section-container">
+        <div className="section-container-contact">
         <p>Get in touch</p>
         <div className="contact">
           <div className="contact-email">
@@ -21,10 +22,13 @@ const Contact = () => {
             <BsPhoneVibrateFill />
             <a href="tel:313-583-7839">313-583-7839</a>
           </div>
-          <p className="contact-location">
-            <ImLocation /> Milan, Michigan 48160
-          </p>
         </div>
+        <p className="contact-location">
+          <ImLocation /> Milan, Michigan 48160
+        </p>
+
+        </div>
+        
       </div>
     </div>
   );
