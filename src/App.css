@@ -1,12 +1,5 @@
-.menu-icon-btn {
-  cursor: pointer;
-  position: fixed;
-  height: 50px;
-  width: 50px;
-  padding: 10px;
-  top: 35px;
-  right: 25px;
-  z-index: 20;
- 
-  color:var(--darkGreen)
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }

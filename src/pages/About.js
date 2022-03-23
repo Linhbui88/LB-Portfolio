@@ -1,17 +1,22 @@
-import "../shared/Section.css";
+import Header from "../components/Header";
+import AboutMe from "../components/AboutMe";
+import Skills from "../components/Skills";
+import { useState } from "react";
 
 const About = () => {
+  const [menuOpen, setMenuOpen] = useState(false);
   return (
-    <div className="section">
-      <div className="section-head">
-        <span>SOME INFO</span>
-        <h2>ABOUT ME</h2>
+    <>
+      <div>
+        <AboutMe />
       </div>
-      <div className="section-container">
-        I'm a fullstack web developer with background in Graphic Design and recently graduated from the <span>Michigan State University
-        Coding Boot Camp</span>. I am passionate about coding and solving problems through code, as well as bulding beautiful, functional and fast web application.
-      </div>
-    </div>
+      {/* <div className="flex flex-col h-screen w-full bg-stone-900 sm:h-screen">
+        <div className="snap-y snap-mandatory h-screen">
+          <AboutMe menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
+          <Skills />
+        </div>
+      </div> */}
+    </>
   );
 };
 

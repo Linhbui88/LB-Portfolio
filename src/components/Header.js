@@ -1,67 +1,23 @@
-import profilePic2 from "../photo/profile.jpg";
+import Navbar from "./Navbar";
+import { useState } from "react";
 
-import { FaEnvelope, FaGithub, FaLinkedin } from "react-icons/fa";
-
-import { FaTwitterSquare } from "react-icons/fa";
-import "./Header.css";
-const Header = () => {
+const Header = ({ menuOpen, setMenuOpen }) => {
   return (
-    <div className="header">
-      <div className="header-content">
-        <img src={profilePic2} alt={profilePic2} />
-
-        <div className="header-description">
-          <p className="greeting">Hi There ! I'm</p>
-          <h1>Linh Bui</h1>
-          <ul className="header-list">
-            <li>fullstack developer</li>
-            <li>based in Michigan</li>
-            <li>fueled by coffee and driven by passion</li>
-            <li>dogs and plants mama</li>
-          </ul>
-          <div className="header-social-resume">
-            <div className="header-resume">
-              <a
-                href={process.env.PUBLIC_URL + "/LinhBui-resume.pdf"}
-                alt="LinhBui-resume"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Resume
-              </a>
-            </div>
-
-            <ul className="socialList">
-              <li>
-                <a
-                  href="https://www.linkedin.com/in/linh-bui-525129219/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <FaLinkedin />
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://github.com/Linhbui88"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <FaGithub />
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://twitter.com/LinhbuiDev"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <FaTwitterSquare />
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
+    <div
+      className={`menu flex flex-col top-0 right-0 ${
+        menuOpen ? "w-full !h-screen" : ""
+      } overflow-x-hidden z-10 bg-stone-700 opacity-95 sm:${
+        menuOpen ? "flex-col h-screen" : "flex-row"
+      } sm:!h-auto sm:!bg-stone-300 md:h-screen md:flex-row
+      }`}
+    >
+      <div className="sm:flex-1 bg-stone-900 z-10"></div>
+      <div
+        className={`text-green-600 !bg-stone-900 ${
+          menuOpen ? "sm:!bg-stone-700 sm:!opacity-95" : ""
+        } h-full sm:flex-1 sm:!bg-stone-300 md:!bg-stone-300 md:!opacity-100 sm:z-10 text-stone-900`}
+      >
+        <Navbar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
       </div>
     </div>
   );
