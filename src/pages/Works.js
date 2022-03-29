@@ -1,18 +1,23 @@
-import "../shared/Section.css";
 import Project from "../components/Project";
-import "./Works.css"
-
+import Navbar from "../components/Navbar";
+import { motion } from "framer-motion";
+import { pageAnimation, photoAnim } from "../animation";
 const Works = ({ projects }) => {
   return (
-    <div className="work-content">
-      <div className="section-head">
-        <span>TAKE A LOOK AT</span>
-        <h2>MY PROJECTS</h2>
-      </div>
-
-      <div className="work-project-card">
-        {projects.map((project, index) => (
-        
+    <div className="bg-stone-900">
+      <motion.div
+        className="bg-stone-300 grid grid-cols-1"
+        variants={pageAnimation}
+        initial="hidden"
+        animate="show"
+        exit="exit"
+      >
+        <Navbar />
+        <motion.div
+          variants={photoAnim}
+          className="grid grid-cols-1 gap-8 m-3 md:grid-cols-2 xlg:grid-cols-3  bg-green-900 rounded-lg"
+        >
+          {projects.map((project, index) => (
             <Project
               key={index}
               title={project.title}
@@ -22,9 +27,9 @@ const Works = ({ projects }) => {
               description={project.description}
               technologies={project.technologies}
             />
-         
-        ))}
-      </div>
+          ))}
+        </motion.div>
+      </motion.div>
     </div>
   );
 };

@@ -1,22 +1,23 @@
-import Header from "../components/Header";
 import AboutMe from "../components/AboutMe";
 import Skills from "../components/Skills";
 import { useState } from "react";
-
+import { motion } from "framer-motion";
+import { pageAnimation } from "../animation";
 const About = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   return (
-    <>
-      <div>
+    <div className="bg-stone-900">
+      <motion.div
+        className="flex-flex-col items-stretch min-w-screen bg-stone-900"
+        variants={pageAnimation}
+        initial="hidden"
+        animate="show"
+        exit="exit"
+      >
         <AboutMe />
-      </div>
-      {/* <div className="flex flex-col h-screen w-full bg-stone-900 sm:h-screen">
-        <div className="snap-y snap-mandatory h-screen">
-          <AboutMe menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
-          <Skills />
-        </div>
-      </div> */}
-    </>
+        <Skills />
+      </motion.div>
+    </div>
   );
 };
 

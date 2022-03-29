@@ -8,7 +8,7 @@ import yourLocalFarmer from "./img/your-local-farmer.JPG";
 export const projects = [
   {
     title: "Tasks Tracker",
-    technologies: "React",
+    technologies: "HTML, CSS, JavaScript, React",
     description:
       "Tasks Tracker web application using React to help keep track of daily tracks.",
     img: tasksTracker,
