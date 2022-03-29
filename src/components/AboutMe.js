@@ -30,7 +30,7 @@ const AboutMe = () => {
                   className="mockup-code bg-green-900 mockup-code:before text-black"
                 >
                   <pre className="text-center">
-                    <code className="text-white text-sm">
+                    <code className="text-white text-sm text-source-code-pro">
                       while(!(succeed = try()))
                     </code>
                   </pre>

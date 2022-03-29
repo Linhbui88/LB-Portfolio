@@ -32,23 +32,29 @@ const Navbar = () => {
             </button>
 
             <div className="flex flex-col justify-center items-center gap-8 w-full h-full text-2xl font-bold md:font-normal md:flex-row md:!justify-end md:!gap-4md:!text-md">
-              <Link to="/">ABOUT</Link>
+              <Link className="hover:text-green-900" to="/">
+                ABOUT
+              </Link>
 
-              <Link to="/works">WORKS</Link>
+              <Link className="hover:text-green-900" to="/works">
+                WORKS
+              </Link>
 
-              <Link to="/contact">CONTACT</Link>
+              <Link className="hover:text-green-900" to="/contact">
+                CONTACT
+              </Link>
             </div>
           </div>
           {menuOpen ? (
             <button
-              className="closebtn float-right text-3xl m-3"
+              className="closebtn float-right text-3xl m-3 hover:text-green-900"
               onClick={() => setMenuOpen(false)}
             >
               <CgCloseR />
             </button>
           ) : (
             <button
-              className="openbtn float-right text-3xl m-3"
+              className="openbtn float-right text-3xl m-3  hover:text-green-900"
               onClick={() => setMenuOpen(true)}
             >
               <CgMenu />
