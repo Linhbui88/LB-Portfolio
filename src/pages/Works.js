@@ -15,7 +15,7 @@ const Works = ({ projects }) => {
         <Navbar />
         <motion.div
           variants={photoAnim}
-          className="grid grid-cols-1 gap-8 m-3 md:grid-cols-2 xlg:grid-cols-3  bg-green-900 rounded-lg"
+          className="grid grid-cols-1 gap-3 m-3 md:grid-cols-2 xlg:grid-cols-3  bg-green-900 rounded-lg"
         >
           {projects.map((project, index) => (
             <Project

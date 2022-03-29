@@ -7,7 +7,7 @@ const Project = ({
   technologies,
 }) => {
   return (
-    <div className="project-card m-2">
+    <div className="project-card p-3">
       <div class="card lg:card-side bg-stone-900 text-stone-300/50 shadow-2xl h-full">
         <figure>
           <img src={img} alt="" />
