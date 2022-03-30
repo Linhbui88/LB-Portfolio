@@ -75,7 +75,7 @@ const AboutMe = () => {
               >
                 <motion.p variants={fade} className="text-center md:!text-left">
                   With a Graphic Design background, I found myself at the
-                  intersection of design ideals and teachnical reality. I am
+                  intersection of design ideals and technical reality. I am
                   fueled by coffee and driven by passion. When I am not working,
                   you can find me cooking, cuddling with my 2 dogs and taking
                   care of 70 houseplants.
